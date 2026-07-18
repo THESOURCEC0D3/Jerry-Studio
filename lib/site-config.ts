@@ -8,14 +8,12 @@ export const site = {
   name: "Jerry'Studio",
   tagline: "Capturing Moments. Preserving Memories.",
 
-  // PLACEHOLDER — replace with Jerry's real WhatsApp number in
-  // international format, digits only (e.g. "2348012345678").
-  whatsappNumber: "2340000000000",
+  // WhatsApp number in international format (0816... → 234816..., digits only).
+  whatsappNumber: "2348165612063",
 
-  // PLACEHOLDER — replace with Jerry's real email.
-  email: "hello@jerrystudio.example",
+  email: "jerrystudiojsoconcept@gmail.com",
 
-  // PLACEHOLDER — replace with Jerry's real Instagram handle (no @).
+  // Instagram handle, no @.
   instagram: "jerrystudio",
 } as const;
 

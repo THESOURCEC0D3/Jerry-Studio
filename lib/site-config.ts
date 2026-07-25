@@ -28,10 +28,12 @@ export const instagramUrl = `https://instagram.com/${site.instagram}`;
 export const emailUrl = `mailto:${site.email}`;
 
 /** Anchor navigation — one page, sections as destinations. */
+// Order mirrors the on-page section order (About renders before Services),
+// so tapping down the menu always scrolls in one consistent direction.
 export const navLinks = [
   { label: "Home", href: "#home" },
   { label: "Portfolio", href: "#portfolio" },
-  { label: "Services", href: "#services" },
   { label: "About", href: "#about" },
+  { label: "Services", href: "#services" },
   { label: "Contact", href: "#contact" },
 ] as const;

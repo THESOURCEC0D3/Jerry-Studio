@@ -30,10 +30,13 @@ export const emailUrl = `mailto:${site.email}`;
 /** Anchor navigation — one page, sections as destinations. */
 // Order mirrors the on-page section order (About renders before Services),
 // so tapping down the menu always scrolls in one consistent direction.
+// Section links are root-relative ("/#id") so they also work from the
+// standalone /packages page (navigate home, then scroll to the section).
 export const navLinks = [
-  { label: "Home", href: "#home" },
-  { label: "Portfolio", href: "#portfolio" },
-  { label: "About", href: "#about" },
-  { label: "Services", href: "#services" },
-  { label: "Contact", href: "#contact" },
+  { label: "Home", href: "/#home" },
+  { label: "Portfolio", href: "/#portfolio" },
+  { label: "About", href: "/#about" },
+  { label: "Services", href: "/#services" },
+  { label: "Packages", href: "/packages" },
+  { label: "Contact", href: "/#contact" },
 ] as const;

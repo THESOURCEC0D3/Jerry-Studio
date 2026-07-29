@@ -3,7 +3,7 @@ import Hero from "@/components/Hero";
 import PortfolioGallery from "@/components/PortfolioGallery";
 import About from "@/components/About";
 import Services from "@/components/Services";
-import Pricing from "@/components/Pricing";
+import PackagesPreview from "@/components/PackagesPreview";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import Testimonials from "@/components/Testimonials";
 import BookingProcess from "@/components/BookingProcess";
@@ -25,7 +25,7 @@ export default function Home() {
         <PortfolioGallery />
         <About />
         <Services />
-        <Pricing />
+        <PackagesPreview />
         <WhyChooseUs />
         <Testimonials />
         <BookingProcess />

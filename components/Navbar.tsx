@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Link from "next/link";
 import { Menu, X } from "lucide-react";
 import { navLinks, site, whatsappBookingUrl } from "@/lib/site-config";
 
@@ -43,24 +44,24 @@ export default function Navbar() {
         className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6 md:h-20 lg:px-8"
       >
         {/* Logo */}
-        <a
-          href="#home"
+        <Link
+          href="/#home"
           onClick={closeMenu}
           className="font-display text-xl font-medium tracking-tight md:text-2xl"
         >
           Jerry<span className="text-accent">&rsquo;</span>Studio
-        </a>
+        </Link>
 
         {/* Desktop links */}
         <ul className="hidden items-center gap-8 md:flex">
           {navLinks.map((link) => (
             <li key={link.href}>
-              <a
+              <Link
                 href={link.href}
                 className="text-sm text-muted transition-colors duration-300 hover:text-foreground"
               >
                 {link.label}
-              </a>
+              </Link>
             </li>
           ))}
         </ul>
@@ -100,13 +101,13 @@ export default function Navbar() {
           <ul className="flex flex-1 flex-col items-center justify-center gap-8">
             {navLinks.map((link) => (
               <li key={link.href}>
-                <a
+                <Link
                   href={link.href}
                   onClick={closeMenu}
                   className="font-display text-3xl text-foreground transition-colors hover:text-accent"
                 >
                   {link.label}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>

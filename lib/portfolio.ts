@@ -64,7 +64,7 @@ export const portfolioImages: PortfolioImage[] = [
     category: "Graduation",
   },
   {
-    src: "/images/portfolio/mother-and-child-dedication.jpeg",
+    src: "/images/portfolio/JSO-668.jpg",
     alt: "Mother in embroidered red attire and silver headwrap smiling down at her baby dressed in lilac at a child dedication.",
     width: 720,
     height: 1080,
